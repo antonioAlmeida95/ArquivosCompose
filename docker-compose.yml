@@ -1,10 +1,10 @@
 services:
   #Aplicação .net
-  service.cadastro:
-    image: service.cadastro
-    container_name: application
+  service.person:
+    image: service.person
+    container_name: person
     build:
-      context: ./CadastroTech
+      context: ./Person
       dockerfile: Dockerfile
     depends_on:
       - postgres
